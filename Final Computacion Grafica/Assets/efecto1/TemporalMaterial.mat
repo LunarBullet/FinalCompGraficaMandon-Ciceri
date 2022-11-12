@@ -64,6 +64,7 @@ Material:
     - _interfecsion_star: 0
     - _interfecsionfallout: 1
     - _speed: 1
+    - _temporal: 3.41
     m_Colors:
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
