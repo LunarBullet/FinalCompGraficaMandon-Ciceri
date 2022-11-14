@@ -8,6 +8,7 @@ public class ControlEffect1 : MonoBehaviour
     [SerializeField] ParticleSystem particula;
     Animator animator;
     private int EscudoActive;
+    bool Activete=true;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +19,23 @@ public class ControlEffect1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1) && Activete)
         {
+            Activete = false;
             animator.SetTrigger(EscudoActive);
             if (particula != null)
              
             particula.Play(true);
+            StartCoroutine(Fade());
         }
+    }
+
+    IEnumerator Fade()
+    {
+        yield return new WaitForSeconds(3f);
+        animator.SetTrigger(EscudoActive);
+        yield return new WaitForSeconds(6f);
+
+        Activete = true;
     }
 }
