@@ -1054,21 +1054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6009a9762d6ad4e8f01794dfa74e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1397007032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397007029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212b2f87ad0c68240b0666a3cb71f5b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  glowMaterial: {fileID: 2100000, guid: 3f1e260e09fe1434ca6c227406b06597, type: 2}
-  MyIntensity: 0
-  intensitySlider: {fileID: 1403623635}
 --- !u!1 &1403623632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5584776325647375216, guid: 09bcacd45e09c4a4a9368232ae4485f1,
@@ -1165,6 +1150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1540383909}
   - component: {fileID: 1540383908}
+  - component: {fileID: 1540383910}
   m_Layer: 0
   m_Name: Effect Manager
   m_TagString: Untagged
@@ -1205,6 +1191,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1540383910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540383907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212b2f87ad0c68240b0666a3cb71f5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 3f1e260e09fe1434ca6c227406b06597, type: 2}
+  escudoMaterial: {fileID: 2100000, guid: 737f3d0d0accf4b42b7751d9dd1d56bf, type: 2}
+  caidaMaterial: {fileID: 2100000, guid: 3eca71db6b441aa42a838ba22ce9ba48, type: 2}
+  MyIntensityEffect1: 0
+  MyIntensityEffect2: 0
+  intensitySlider: {fileID: 1403623635}
 --- !u!1 &1575210428 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1422729805050433165, guid: 2392d3e06ba8d2e4e96b1452c88661be,
