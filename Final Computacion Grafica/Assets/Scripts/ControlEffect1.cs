@@ -34,8 +34,18 @@ public class ControlEffect1 : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         animator.SetTrigger(EscudoActive);
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(3f);
 
         Activete = true;
+    }
+
+    public void StartEffect()
+    {
+        Activete = false;
+        animator.SetTrigger(EscudoActive);
+        if (particula != null)
+
+            particula.Play(true);
+        StartCoroutine(Fade());
     }
 }

@@ -9751,7 +9751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3092416474478042631}
   m_Layer: 0
-  m_Name: caidas
+  m_Name: Efecto3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

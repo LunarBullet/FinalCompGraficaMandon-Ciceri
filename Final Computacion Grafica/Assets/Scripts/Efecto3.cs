@@ -18,8 +18,7 @@ public class Efecto3 : MonoBehaviour
       
         if (Input.GetKeyDown(KeyCode.Keypad3)|| Input.GetKeyDown(KeyCode.Alpha3))
         {
-            transform.position = new Vector3(transform.position.x, 2, transform.position.z);
-            Debug.Log("efecto");
+            
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -28,5 +27,11 @@ public class Efecto3 : MonoBehaviour
         objetoparticula.transform.position = new Vector3(transform.position.x, transform.position.y - 0.23f, transform.position.z);
         particula.Play(true);
 
+    }
+
+    public void StartEffect()
+    {
+        transform.position = new Vector3(transform.position.x, 2, transform.position.z);
+        Debug.Log("efecto");
     }
 }
