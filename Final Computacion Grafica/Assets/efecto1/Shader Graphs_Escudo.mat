@@ -59,10 +59,10 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimStar: 0
-    - _Rimfallof: 0.84
+    - _Rimfallof: 1.1155815
     - _distorcion: 20
     - _interfecsion_star: 0
-    - _interfecsionfallout: 0
+    - _interfecsionfallout: 1.1023263
     - _speed: 0.2
     m_Colors:
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}

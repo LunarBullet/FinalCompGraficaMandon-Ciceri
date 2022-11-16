@@ -76,7 +76,7 @@ public class Effect2Intensity : MonoBehaviour
 
         foreach (var item in Effect3GameObjects)
         {
-            item.transform.localScale = new Vector3(1 * mySizeEffect1, 1 * mySizeEffect1, 1 * mySizeEffect1);
+            item.transform.localScale = new Vector3(1 * mySizeEffect3, 1 * mySizeEffect3, 1 * mySizeEffect3);
         }
     }
 
